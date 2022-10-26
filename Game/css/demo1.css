@@ -20,8 +20,8 @@ i {
     font-size:8rem;
 }
 
-input {
-    border: 5px solid rgb(0, 140, 255);
+.col-lg-4 {
+  padding: 30px 0;
 }
 
 /* Section for programmer defined classes */
