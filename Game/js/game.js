@@ -10,49 +10,36 @@
 */
 
 let questions = [
-  "Which one is the Yellow Birch Tree?",
-  "Which one is the Apple Tree?",
-  "What one is the Pear Tree?"
- ];
+ "Which one is the Yellow Birch Tree?",
+ "Which one is the Apple Tree?",
+ "What one is the Pear Tree?",
+ "What should you check to find directions?"
+];
  
  
  
  // global array containing the questions for the game
  // Note: Each screen contains 3 images: image 1, image 2 and image 3 from
  //       left to right or from top to bottom depending on your device.
- let answers = [1, 2, 3, 2, 3, 1, 3, 1, 2];
+ let answers = [1, 2, 3, 2];
  
  // global array containing 9 sets of 3 images making up the 9 screens.
  // There are 27 elements in this array.
- let panels = [
-   "Yellow Birch.jpg",
-   "Apple Tree.jpg",             ,
-   "Pear Tree.jpg",             
-   "kil.jpg",
-   "ltu.jpg",
-   "mijisi.jpg",
-   "nin.jpg",
-   "teluisi.jpg",
-   "wiktm.jpg",
-   "Yellow Birch.jpg",
-   "eliey.jpg",
-   "kesalk.jpg",
-   "kil.jpg",
-   "ltu.jpg",
-   "mijisi.jpg",
-   "nin.jpg",
-   "teluisi.jpg",
-   "wiktm.jpg",
-   "Yellow Birch.jpg",
-   "eliey.jpg",
-   "kesalk.jpg",
-   "kil.jpg",
-   "ltu.jpg",
-   "mijisi.jpg",
-   "nin.jpg",
-   "teluisi.jpg",
-   "wiktm.jpg",
- ];
+let panels = [
+  "Yellow Birch.jpg",
+  "Random1.jpg",             
+  "Random2.jpg",             
+  "Pear Tree.jpg",
+  "Apple Tree.jpg",
+  "Random2.jpg",
+  "Random3.jpg",
+  "Yellow Birch.jpg",
+  "Pear Tree.jpg",
+  "Church.jpg",
+  "Directions.jpg",
+  "Well.jpg",
+  "Apple Tree.jpg"
+];
  
  // Contains the current screen number starting at zero.
  let panelSet = 0;
@@ -114,7 +101,7 @@ let questions = [
     document.getElementById("correctgif").style.visibility = "visible";
  
      // update panelSet in the sequence: 0 1 2 3 4 5 6 7 8 and back to 0
-     panelSet = (panelSet + parseInt(1)) % parseInt(9);
+     panelSet = (panelSet + parseInt(1)) % parseInt(4);
  
      document.getElementById("heading").innerHTML = questions[panelSet];
  
