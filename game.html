@@ -1,0 +1,92 @@
+<!--
+  The purpose of this file is to lay out the structure for the Mi'kmaq
+  language app, using Bootstrap. It does load HTML dynamically for the
+  images and their associated audio.
+  Authors: Terry Goldsmith (created the initial file which includes all
+                            the required code)
+         : Chris Churchill 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>demo1</title>
+
+    <!-- These 2 lines are required for Bootstrap to work -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap css and icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+     <!-- jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <!-- Programmer defined css -->
+    <link rel="stylesheet" href="demo1.css">
+
+    <!-- Programmer defined js -->
+    <script src="game.js"></script>
+  </head>
+
+
+
+  <!-- When the page is loaded setup() is called to fill div's pic1,
+       pic2 and pic3 present below -->
+  <body onload="setup()">
+
+    <header>
+          
+      <!-- Title header -->
+      <div id="top-header">
+                
+      <div id="header-image-menu">
+  
+          <h1 id = "image-text">
+             <center> St. Margarets Bay Woodland Conservation Area </center>
+          </h1>
+      </div>
+    </header>
+    
+    <nav class="w3-bar w3-black">
+      <a href="Woodland2.html"  class="w3-button w3-bar-item" onclick="location.href='./Woodland2.html'">Home</a>
+      <a href="#About Us" class="w3-button w3-bar-item">About Us</a>
+      <a href="#Visit Us" class="w3-button w3-bar-item" onclick="location.href='./visitus.html'">Visit Us</a>
+      <a href="#Resources" class="w3-button w3-bar-item">Resources</a>
+      <a href="#Support" class="w3-button w3-bar-item">Support</a>
+      <a href="#FAQ" class="w3-button w3-bar-item" onclick="location.href='./faqs.html'">FAQ</a>
+      <a href="#Volunteer" class="w3-button w3-bar-item">Volunteer</a>
+      <a href="#History" class="w3-button w3-bar-item" onclick="location.href='./history.html'">History</a>
+      <a href="#Events" class="w3-button w3-bar-item">Events</a>
+      <a href="#Services" class="w3-button w3-bar-item">Services</a>
+      <a href="#Contact Us" class="w3-button w3-bar-item">Contact Us</a>
+      <a href="#Game" class="w3-button w3-bar-item" onclick="location.href='./game.html'">Quiz Game</a>
+    </nav>
+
+    <!-- All Bootstrap grid classes are required to be in a container class -->
+    <div class="container text-center">
+        <!-- defines the first row -->
+        <div class="row top-space">
+          <!-- defines 1 column which includes all 12 column sections -->
+          <div class="col-12">
+            <h1 id="heading"></h1>
+          </div>
+        </div>
+        <!-- defines the second row -->
+        <div class="row top-space">
+          <!-- defines 3 columns which each include 4 column sections
+               which add up to 12 as they must -->
+          <div class="col-lg-4" id="pic1">
+          </div>
+          <div class="col-lg-4" id="pic2">
+          </div>
+          <div class="col-lg-4" id="pic3">
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>
+
