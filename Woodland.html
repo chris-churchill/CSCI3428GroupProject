@@ -1,149 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-    
-<title>Woodland Conservation</title>
-
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap css and icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-    <!-- jquery library-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-
-    <link rel="stylesheet" href="Woodland.css">
-
-    <script src="Woodland.js"></script>
-
-</head>
-
-<body>
-
-  <header>
-          
-    <!-- Top header menu containing
-         logo and Navigation bar -->
-    <div id="top-header">
-              
-        
-    <div id="header-image-menu">
-
-        <h2 id = "image-text">
-           <center> St. Margarets Bay Woodland Conservation Area </center>
-        </h2>
-    </div>
-</header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
 
-    <div class="topnav">
-        <a data-role="button" class="active" href="#home" onclick="location.href='home.html'">Home</a>
-        <a data-role="button" class="active" href="#map" onclick="location.href='map.html'">Map</a>
-        <a data-role="button" class="active" href="#history" onclick="location.href='history.html'">History</a>
-        <a data-role="button" class="active" href="#photos" onclick="location.href='photos.html'">Photos</a>
-        <a data-role="button" class="active" href="#faqs" onclick="location.href='faqs.html'">FAQs</a>
-        <a data-role="button" class="active" href="#visitus" onclick="location.href='visitus.html'">Visit Us</a>
-      </div>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="Woodland.html"  class="w3-button w3-bar-item" onclick="location.href='./Woodland.html'">Home</a>
+    <a href="Map.html"  class="w3-button w3-bar-item" onclick="location.href='./map.html'">Map</a>
+    <a href="#About Us" class="w3-button w3-bar-item">About Us</a>
+    <a href="#Visit Us" class="w3-button w3-bar-item" onclick="location.href='./visitus.html'">Visit Us</a>
+    <a href="#Resources" class="w3-button w3-bar-item">Resources</a>
+    <a href="#Support" class="w3-button w3-bar-item">Support</a>
+    <a href="#FAQ" class="w3-button w3-bar-item" onclick="location.href='./faqs.html'">FAQ</a>
+    <a href="#Volunteer" class="w3-button w3-bar-item">Volunteer</a>
+    <a href="#History" class="w3-button w3-bar-item" onclick="location.href='./history.html'">History</a>
+    <a href="#Events" class="w3-button w3-bar-item">Events</a>
+    <a href="#Services" class="w3-button w3-bar-item">Services</a>
+    <a href="#Contact Us" class="w3-button w3-bar-item">Contact Us</a>
+    <a href="#Game" class="w3-button w3-bar-item" onclick="location.href='./game.html'">Quiz Game</a>
+  </nav>
 
 
-<!--
-    <section id="history">
-    <div class="row">
-      <div class="col-lg-6">
-          <h1 class="history-heading">History & Special Features</h1>
-
-          <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="col-lg-6">
-        <div>
-            <img src="" alt="an image" class="history-image">
-        </div>
-
-      </div>
-    </div>
-</section>
-    
-    <section id="FAQS">
-    <div class="faqsHeading">
-        FAQS
-    </div>
-    <div class="faqList"> 
-        <ol>
-           <a href="http://" ><li>Can I visit?</li></a>
-           <a href="http://" ><li>Where is the location?</li></a>
-           <a href="http://" ><li>Is it safe to hike here?</li></a>
-        </ol>
-          
-    </div>
-
-    <div class="faqImages">
-        <img src="rockypathimage612x612.jpg" class="rounded float-right" alt="picture of a rocky path" width="200px" height="200px">
-        
-        </div>
-    </div>
-    </section>
-
-
-<section id="trails">
-    <style>
-        h1 {text-align: center;}
-        p {text-align: center;}
-      
-  </style>
-
-
-  <p> <h1> TRAILS  </h1> </p> 
-  <p> <font size="+1.3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </font>
-  </p>
   
-  <center><img alt="Hike" src="hiketrail.jpeg" 
-    width=600" height="300"></center>
-
-
-  <h1> DIRECTIONS </h1>  </centre> 
-  <p> <font size="+1.3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.</font> 
-  </p>
-
-  <center><img alt="Directions" src="directionstrail.png"
-    width=600" height="300"></center>
-
-  <h1> <centre> DANGERS </centre> </h1> 
-  <p>
-    <font size="+1.3">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</font>
-  </p>
-  
-  <div class="row">
-    <div class="column">
-      <img alt="Danger1" src="danger1.jpg"
-      width="400" height="250">
-    </div>
-    <div class="column">
-      <img alt="Danger1" src="danger1.jpg"
-      width="400" height="250">
-    </div>
-
-
-    <div class="column">
-      <img alt="Danger1" src="danger1.jpg"
-      width="400" height="250">
-    </div>
+<!-- Slide Show -->
+<section>
+    <a href="https://imgur.com/Nh58TO8"><img class="mySlides" src="https://i.imgur.com/Nh58TO8.jpg" width="1400" height="350" title="source: imgur.com" /></a>
+    <a href="https://imgur.com/DsuZDgQ"><img class="mySlides" src="https://i.imgur.com/DsuZDgQ.jpg" width="1400" height="350" title="source: imgur.com" /></a>
+    <a href="https://imgur.com/KhMdoDA"><img class="mySlides" src="https://i.imgur.com/KhMdoDA.png" width="1400" height="350" title="source: imgur.com" /></a>
+    <a href="https://imgur.com/cm7K2tD"><img class="mySlides" src="https://i.imgur.com/cm7K2tD.png" width="1400" height="350" title="source: imgur.com" /></a>
 </section>
 
-      -->
-</body>
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+
+<!--Home Page--> 
+<section class="w3-container w3-center" style="max-width:600px">
+    <h2 class="w3-wide" style ="color:darkgreen ; font-family:cursive">
+      Welcome To St. Margarets Bay Woodland Conservation Area</h2>
+    <p class="w3-opacity"><i>Conservation For The Future</i></p>
+  </section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+    <p class="w3-center"> 
+      Preserving the present for the future.
+    </p>
+</section>
+
+<div>
+<p>
+  A disturbance can be described as an event, either natural or human-induced, that causes a change
+  in the existing condition of an ecological system.
+
+</div>
+
+<style>
+  div {
+  text-align: left;
+}
+</style>
 
 
-</html>
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+</footer>
