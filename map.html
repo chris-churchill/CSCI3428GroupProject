@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Woodland.css">
     <link rel="stylesheet" href="tooltip.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <title>Site map</title>
   </head>
   <body>
@@ -16,28 +17,126 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
     <script src="script.js"></script>
     <script src="tooltip.js"></script>
-    <img src="site.jpg" width="1920" height="1080"usemap="#image-map" class="maparea">
 
-    <map name="image-map" id="image-map">
-        <area target="" class="tooltip" alt="" title="" href="" coords="486,329,43" shape="circle" onmouseover="tooltip.pop(this, '#tip1')">
-        <area target="" alt="" title="" href="" coords="610,421,34" shape="circle">
-        <area target="" alt="" title="" href="" coords="660,518,33" shape="circle">
-        <area target="" alt="" title="" href="" coords="727,529,28" shape="circle">
-        <area target="" alt="" title="" href="" coords="745,578,24" shape="circle">
-        <area target="" alt="" title="" href="" coords="732,644,25" shape="circle">
-        <area target="" alt="" title="" href="" coords="805,648,26" shape="circle">
-        <area target="" alt="" title="" href="" coords="896,707,30" shape="circle">
-        <area target="" alt="" title="" href="" coords="973,756,29" shape="circle">
-        <area target="" alt="" title="" href="" coords="1066,853,29" shape="circle">
-        <area target="" alt="" title="" href="" coords="1159,848,41" shape="circle">
-    </map>
-    <div style='display: none'>
-      <div id="tip1">
-        <img src="Game/pics/church.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
-        <h3>The original church</h3>
-        <p>Built sometime after the dinosaurs</p>
+    <nav class="w3-bar w3-black">
+      <a href="Woodland.html"  class="w3-button w3-bar-item" onclick="location.href='./Woodland.html'">Home</a>
+      <a href="Map.html"  class="w3-button w3-bar-item" onclick="location.href='./map.html'">Map</a>
+      <a href="#About Us" class="w3-button w3-bar-item">About Us</a>
+      <a href="#Photos" class="w3-button w3-bar-item">Photos</a>
+      <a href="#Visit Us" class="w3-button w3-bar-item" onclick="location.href='./visitus.html'">Visit Us</a>
+      <a href="#Resources" class="w3-button w3-bar-item">Resources</a>
+      <a href="#Support" class="w3-button w3-bar-item">Support</a>
+      <a href="#FAQ" class="w3-button w3-bar-item" onclick="location.href='./faqs.html'">FAQ</a>
+      <a href="#History" class="w3-button w3-bar-item" onclick="location.href='./history.html'">History</a>
+      <a href="#Events" class="w3-button w3-bar-item">Events</a>
+      <a href="#Services" class="w3-button w3-bar-item">Services</a>
+      <a href="#Contact Us" class="w3-button w3-bar-item">Contact Us</a>
+      <a href="#Game" class="w3-button w3-bar-item" onclick="location.href='./game.html'">Quiz Game</a>
+    </nav>
+
+    <div  class="container-fluid">
+
+      <img src="site.jpg" width="1920" height="1080"usemap="#image-map" class="maparea">
+
+      <map name="image-map" id="image-map">
+          <area target="" class="tooltip" alt="" title="" href="" coords="486,329,43" shape="circle" onmouseover="tooltip.pop(this, '#tip1')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="610,421,34" shape="circle" onmouseover="tooltip.pop(this, '#tip2')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="660,518,33" shape="circle" onmouseover="tooltip.pop(this, '#tip3')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="727,529,28" shape="circle" onmouseover="tooltip.pop(this, '#tip4')">
+          <area target="" class="tooltip"alt="" title="" href="" coords="745,578,24" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip5')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="732,644,25" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip6')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="805,648,26" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip7')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="896,707,30" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip8')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="973,756,29" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip9')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="1066,853,29" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip10')">
+          <area target="" class="tooltip" alt="" title="" href="" coords="1159,848,41" shape="circle" shape="circle" onmouseover="tooltip.pop(this, '#tip11')">
+      </map>
+      <div style='display: none'>
+        <div id="tip1">
+          <img src="Game/pics/church.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>St. Paul's Anglican Church</h3>
+          <p>The trail starts just behind the church</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip2">
+          <img src="Game/pics/Random Tree.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>A Large Haselnut Tree</h3>
+          <p>Picture not related</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip3">
+          <img src="Game/pics/Apple Tree.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>A Large Apple Tree</h3>
+          <p>A wild and slightly bent apple tree grows along the trail</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip4">
+          <img src="Game/pics/Pear Tree.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>A Pear Tree</h3>
+          <p>There is also a pear tree</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip5">
+          <h3>There is a Cherry-Honeysuckle Arch here</h3>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip6">
+          <img src="Game/pics/Path Arrow.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>Trail takes sharp turn here</h3>
+          <p>This is also where the Spruce Grove begins</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip7">
+          <img src="Game/pics/Farm Structure.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>Foundation of an old farm structure</h3>
+          <p>Possibly built in the 1700s</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip8">
+          <img src="Game/pics/More Bushes.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>Spruce Grove ends here</h3>
+          <p>Sweet Cherry is on the left</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip9">
+          <img src="Game/pics/Path Arrow.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>Big Grove enterance</h3>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip10">
+          <img src="Game/pics/Well.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>A Very Old Well</h3>
+          <p>A small but deep well likely built by farmers that lived in the are</p>
+      </div>
+      </div>
+
+      <div style='display: none'>
+        <div id="tip11">
+          <img src="Game/pics/Apple Tree.jpg" style="float:right;margin-left:12px;width:75px;height:75px;" alt="" />
+          <h3>A Very Large Apple Tree</h3>
+      </div>
+      </div>
+
     </div>
-    </div>
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
