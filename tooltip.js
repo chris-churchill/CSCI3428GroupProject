@@ -1,3 +1,8 @@
+/*
+  This file contains the tooltip functions and settings
+  Authors: Menucool, Rodion Marienko
+*/
+
 var tooltipOptions=
 {
     showDelay: 100,
@@ -7,8 +12,8 @@ var tooltipOptions=
     relativeTo: "mouse",
     position: 1,
     smartPosition: true,
-    offsetX: 0,
-    offsetY: 0,
+    offsetX: 60,
+    offsetY: 40,
     maxWidth: 500,
     calloutSize: 16,
     calloutPosition: 0.3,
